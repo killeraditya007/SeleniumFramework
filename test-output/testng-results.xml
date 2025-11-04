@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-04T23:45:01 IST" name="Suite" finished-at="2025-11-04T23:45:28 IST" duration-ms="26577">
+  <suite started-at="2025-11-05T00:24:26 IST" name="Suite" finished-at="2025-11-05T00:24:45 IST" duration-ms="19188">
     <groups>
     </groups>
-    <test started-at="2025-11-04T23:45:01 IST" name="Test" finished-at="2025-11-04T23:45:28 IST" duration-ms="26577">
+    <test started-at="2025-11-05T00:24:26 IST" name="Test" finished-at="2025-11-05T00:24:45 IST" duration-ms="19188">
       <class name="com.automation.SeleniumFramework.Execution.DemoQAExecution">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@389b0789]" started-at="2025-11-04T23:45:01 IST" name="setUp" finished-at="2025-11-04T23:45:06 IST" duration-ms="5442" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@9816741]" started-at="2025-11-05T00:24:26 IST" name="setUp" finished-at="2025-11-05T00:24:31 IST" duration-ms="5143" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC01_CheckElementsFunctionality()[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@389b0789]" started-at="2025-11-04T23:45:06 IST" name="TC01_CheckElementsFunctionality" finished-at="2025-11-04T23:45:09 IST" duration-ms="2776" status="PASS">
+        <test-method signature="TC01_CheckElementsFunctionality()[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@9816741]" started-at="2025-11-05T00:24:31 IST" name="TC01_CheckElementsFunctionality" finished-at="2025-11-05T00:24:34 IST" duration-ms="2756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_CheckElementsFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@389b0789]" started-at="2025-11-04T23:45:09 IST" name="tearDown" finished-at="2025-11-04T23:45:09 IST" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@9816741]" started-at="2025-11-05T00:24:34 IST" name="tearDown" finished-at="2025-11-05T00:24:34 IST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@389b0789]" started-at="2025-11-04T23:45:09 IST" name="setUp" finished-at="2025-11-04T23:45:11 IST" duration-ms="1297" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@9816741]" started-at="2025-11-05T00:24:34 IST" name="setUp" finished-at="2025-11-05T00:24:38 IST" duration-ms="4420" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC02_FillPracticeForm()[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@389b0789]" started-at="2025-11-04T23:45:11 IST" name="TC02_FillPracticeForm" finished-at="2025-11-04T23:45:27 IST" duration-ms="16104" status="PASS">
+        <test-method signature="TC02_FillPracticeForm()[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@9816741]" started-at="2025-11-05T00:24:38 IST" name="TC02_FillPracticeForm" finished-at="2025-11-05T00:24:45 IST" duration-ms="6478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_FillPracticeForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@389b0789]" started-at="2025-11-04T23:45:27 IST" name="tearDown" finished-at="2025-11-04T23:45:28 IST" duration-ms="753" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.SeleniumFramework.Execution.DemoQAExecution@9816741]" started-at="2025-11-05T00:24:45 IST" name="tearDown" finished-at="2025-11-05T00:24:45 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
