@@ -15,12 +15,17 @@ public class ReusableComponent {
 	public static WebDriver LaunchBrowser(String browser) {
 		WebDriver driver = null;
 		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless=new");
 		options.addArguments("--disable-popup-blocking");
 		options.addArguments("--disable-notifications");
 		options.addArguments("--disable-infobars");
 		options.addArguments("--blink-settings=imagesEnabled=false"); // speeds up load
         options.addArguments("--incognito");
         options.addArguments("--start-maximized");
+        options.addArguments("--window-size=1920,1080"); // simulate full HD screen
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
 		if (browser == null || browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);
