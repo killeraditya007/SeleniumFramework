@@ -3,9 +3,7 @@ package com.automation.SeleniumFramework.Extras;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.automation.SeleniumFramework.Extras.ExtentManager;
 import com.automation.SeleniumFramework.Utils.ScreenshotUtils;
-import com.automation.SeleniumFramework.Extras.DriverFactory; // we’ll show DriverFactory below
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;

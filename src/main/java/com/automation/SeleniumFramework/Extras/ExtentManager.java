@@ -1,19 +1,16 @@
 package com.automation.SeleniumFramework.Extras;
 
-import com.aventstack.extentreports.ExtentReports;     // for older extentreports 3.x
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;     // for extentreports 5+
+import com.aventstack.extentreports.ExtentReports;   
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;    
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class ExtentManager {
     private static ExtentReports extent;
     private static final String OUTPUT_FOLDER = "test-output/extent-reports/";
-    private static final String FILE_NAME = "ExtentReport.html";
 
     public synchronized static ExtentReports getInstance() {
         if (extent == null) {

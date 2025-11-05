@@ -24,6 +24,7 @@ public class DemoQAExecution {
 	@Parameters({"browser"})
     @BeforeMethod
     public void setUp(@Optional("chrome") String browser) {
+		
 		driver = ReusableComponent.LaunchBrowser(browser);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         homePage = new HomePage(driver);

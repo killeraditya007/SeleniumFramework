@@ -4,6 +4,8 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -15,6 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.automation.SeleniumFramework.Utils.ExcelUtils;
 
 public class FormsFunctionality extends BasePage{
+	private static final Logger logger = (Logger) LogManager.getLogger(FormsFunctionality.class);
 	WebDriverWait wait;
 
 	public FormsFunctionality(WebDriver driver) {
@@ -115,7 +118,7 @@ public class FormsFunctionality extends BasePage{
 	
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", closeModalBT);
 			((JavascriptExecutor) driver).executeScript("arguments[0].click();", closeModalBT);
-//			wait.until(ExpectedConditions.elementToBeClickable(closeModalBT)).click();
+			logger.info("Form Filled Successfully.");
 		}catch(Exception e) {
 			throw new RuntimeException(e.getMessage());
 		}

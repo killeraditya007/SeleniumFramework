@@ -4,6 +4,8 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,6 +14,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.automation.SeleniumFramework.Utils.ExcelUtils;
 
 public class ElementsFunctionality extends BasePage{
+
+	private static final Logger logger = (Logger) LogManager.getLogger(ElementsFunctionality.class);
+	
 	WebDriverWait wait;
 
 	public ElementsFunctionality(WebDriver driver) {
@@ -41,6 +46,8 @@ public class ElementsFunctionality extends BasePage{
 			for(String s : output) {
 				System.out.println(s);
 			}
+			
+			logger.info("Text box functionality completed.");
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -63,6 +70,7 @@ public class ElementsFunctionality extends BasePage{
 			for(int i=0;i<resultCB.size();i++) {
 				System.out.println(resultCB.get(i).getText());
 			}
+			logger.info("Check box functionality completed.");
 		}catch(Exception e) {
 			e.printStackTrace();
 		}	
@@ -76,6 +84,7 @@ public class ElementsFunctionality extends BasePage{
 			System.out.println("You have selected radio button as: "+selectedRadioBTLabel.getText());
 			wait.until(ExpectedConditions.elementToBeClickable(impressiveRadioBT)).click();
 			System.out.println("You have selected radio button as: "+selectedRadioBTLabel.getText());
+			logger.info("Radio button functionality completed.");
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
