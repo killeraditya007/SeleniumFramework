@@ -32,9 +32,9 @@ public class ExtentManager {
             e.printStackTrace();
         }
 
-        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
-        String reportPath = OUTPUT_FOLDER + "ExtentReport_" + timestamp + ".html";
-
+//        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
+//        String reportPath = OUTPUT_FOLDER + "ExtentReport_" + timestamp + ".html";
+        String reportPath = OUTPUT_FOLDER + "ExtentReport_Latest.html";
         ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
         spark.config().setDocumentTitle("Automation Report");
         spark.config().setReportName("Selenium Automation Results");
